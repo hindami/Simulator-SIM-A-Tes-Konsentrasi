@@ -1,0 +1,10 @@
+body {
+  text-align: center;
+}
+
+canvas {
+  
+  position:absolute;
+  top: 9.9%;
+  left: 27.8%;
+}
