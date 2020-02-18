@@ -53,12 +53,21 @@ function updateGameArea() {
     myGamePiece.speedY = 0;
     myGamePiece2.speedX = 0;
     myGamePiece2.speedY = 0;
-    if (myGameArea.key && myGameArea.key == 37) {myGamePiece.speedX = -3; myGamePiece2.speedX = -3; }
-    if (myGameArea.key && myGameArea.key == 39) {myGamePiece.speedX = 3; myGamePiece2.speedX = 3; }
-    if (myGameArea.key && myGameArea.key == 38) {myGamePiece.speedY = -3; myGamePiece2.speedY = -3; }
-    if (myGameArea.key && myGameArea.key == 40) {myGamePiece.speedY = 3; myGamePiece2.speedY = 3; }
+    if (myGameArea.key && myGameArea.key == 37) {myGamePiece.speedX = -4; myGamePiece2.speedX = -4; }
+    if (myGameArea.key && myGameArea.key == 39) {myGamePiece.speedX = 4; myGamePiece2.speedX = 4; }
+    if (myGameArea.key && myGameArea.key == 38) {myGamePiece.speedY = 0; myGamePiece2.speedY = 0; }
+    if (myGameArea.key && myGameArea.key == 40) {myGamePiece.speedY = 0; myGamePiece2.speedY = 0; }
     myGamePiece.newPos();
     myGamePiece.update();
     myGamePiece2.newPos();
     myGamePiece2.update();
+}
+
+var myVideo = document.getElementById("video1");
+
+function playPause() {
+  if (myVideo.paused)
+    myVideo.play();
+  else
+    myVideo.pause();
 }
