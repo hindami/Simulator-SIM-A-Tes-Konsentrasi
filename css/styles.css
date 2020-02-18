@@ -1,9 +1,10 @@
 body {
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
 }
 
 canvas {
-  
   position:absolute;
   top: 9.9%;
   left: 27.8%;
